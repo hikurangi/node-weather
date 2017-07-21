@@ -1,11 +1,12 @@
 const request = require('request')
 const dotenv = require('dotenv').config()
+const argv = require('yargs').argv
 
 const apiKey = process.env.OWM_KEY
-let city = 'wellington'
+let city = argv.c || 'wellington'
 let units ='metric' // imperial - if unspecified, body.main.temp is in degrees kelvin
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`
-
+const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`
+console.log('args', process.argv);
 
 request(url, (err, response, body) => {
   if (err) {
