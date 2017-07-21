@@ -1,0 +1,11 @@
+{
+  "name": "node-weather",
+  "version": "1.0.0",
+  "description": "A Node.js weather app from the codeburst.io tutorial.",
+  "main": "index.js",
+  "author": "hikurangi",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
