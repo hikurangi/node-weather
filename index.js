@@ -3,12 +3,17 @@ const dotenv = require('dotenv').config()
 
 const apiKey = process.env.OWM_KEY
 let city = 'wellington'
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+let units ='metric' // imperial - if unspecified, body.main.temp is in degrees kelvin
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`
+
 
 request(url, (err, response, body) => {
   if (err) {
     console.error({error});
   } else {
+    let weather = JSON.parse(body)
+    let message = `It's ${weather.main.temp} degrees in ${weather.name}!`
     console.log({body});
+    console.log(message);
   }
 })
