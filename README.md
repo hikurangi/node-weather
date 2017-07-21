@@ -7,6 +7,6 @@ You'll need Node.js installed and NPM (packaged with Node) *or* Yarn, depending 
 1. Enter `git clone https://github.com/hikurangi/node-weather.git && cd node-weather`.
 2. Then `npm i` or `yarn` to install dependencies.
 3. Get an API key from [https://openweathermap.org/](openweathermap.org).
-4. Create a `.env` file in the node-weather folder and add the following line with your API key where it belongs, as in: `OWM_KEY=your key here`.
+4. Create a `.env` file in the `node-weather` folder and add the following line with your API key where it belongs, as in: `OWM_KEY=your key here`.
 5. Check the weather in your city by running `node index.js` with the flag `-c` followed by the name of your city: `node index.js -c Eketahuna` and so on.
 6. Enjoy!
