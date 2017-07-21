@@ -1,5 +1,5 @@
 # node-weather
-A command-line based Node.js weather app from the Codeburst.io tutorial found [https://codeburst.io/build-a-simple-weather-app-with-node-js-in-just-16-lines-of-code-32261690901d](here).
+A command-line based Node.js weather app from the Codeburst.io tutorial found [here](https://codeburst.io/build-a-simple-weather-app-with-node-js-in-just-16-lines-of-code-32261690901d).
 
 ## To use:
 You'll need Node.js installed and NPM (packaged with Node) *or* Yarn, depending on your favourite flavour of package manager.
