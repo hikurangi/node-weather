@@ -11,6 +11,6 @@
     "yargs": "^8.0.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js --c"
   }
 }
